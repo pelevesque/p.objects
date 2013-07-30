@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 644.0, 152.0, 561.0, 299.0 ],
+		"rect" : [ 71.0, 209.0, 559.0, 307.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 644.0, 152.0, 561.0, 299.0 ],
+		"defrect" : [ 71.0, 209.0, 559.0, 307.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -17,12 +17,65 @@
 		"imprint" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "- p.lcdrectselect",
+					"fontsize" : 12.0,
+					"patching_rect" : [ 456.0, 89.0, 97.0, 20.0 ],
+					"id" : "obj-16",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"varname" : "autohelp_top_title[1]",
+					"text" : "p.lcdmultirectselect",
+					"fontface" : 3,
+					"fontsize" : 20.899994,
+					"patching_rect" : [ 8.0, 4.0, 398.0, 31.0 ],
+					"id" : "obj-12",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"varname" : "autohelp_top_digest[1]",
+					"text" : "Selects multiple rectuangular areas in a lcd object.",
+					"fontsize" : 12.754705,
+					"patching_rect" : [ 8.0, 33.0, 548.0, 21.0 ],
+					"id" : "obj-23",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "panel",
+					"patching_rect" : [ 0.0, 0.0, 559.0, 60.0 ],
+					"id" : "obj-13",
+					"rounded" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"maxclass" : "button",
 					"outlettype" : [ "bang" ],
 					"hidden" : 1,
-					"patching_rect" : [ 423.0, 194.0, 20.0, 20.0 ],
-					"numinlets" : 1,
+					"patching_rect" : [ 392.0, 216.0, 20.0, 20.0 ],
 					"id" : "obj-15",
+					"numinlets" : 1,
 					"numoutlets" : 1
 				}
 
@@ -32,13 +85,13 @@
 					"maxclass" : "newobj",
 					"text" : "pcontrol",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
 					"hidden" : 1,
-					"patching_rect" : [ 423.0, 242.0, 53.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"patching_rect" : [ 392.0, 264.0, 53.0, 20.0 ],
 					"id" : "obj-19",
-					"numoutlets" : 1
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -47,13 +100,13 @@
 					"maxclass" : "message",
 					"text" : "help p.objects-guide",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
 					"hidden" : 1,
-					"patching_rect" : [ 423.0, 220.0, 118.0, 18.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"patching_rect" : [ 392.0, 242.0, 118.0, 18.0 ],
 					"id" : "obj-29",
-					"numoutlets" : 1
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -62,39 +115,39 @@
 					"maxclass" : "message",
 					"text" : "p.objects guide",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 457.0, 270.0, 92.0, 18.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"patching_rect" : [ 456.0, 278.0, 92.0, 18.0 ],
 					"id" : "obj-30",
-					"numoutlets" : 1
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "args:\n - 1) nametag (required)\n - 2) R B G (optional)",
+					"text" : "Args:\n 1) Namespace. (required)\n 2) R B G (optional)",
 					"linecount" : 3,
-					"fontname" : "Arial",
-					"patching_rect" : [ 192.0, 247.0, 149.0, 48.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"patching_rect" : [ 182.0, 251.0, 143.0, 44.0 ],
 					"id" : "obj-35",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "see selection data",
-					"fontname" : "Arial",
-					"patching_rect" : [ 423.0, 116.0, 109.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"text" : "Inspect selection data.",
+					"fontsize" : 11.0,
+					"patching_rect" : [ 373.0, 146.0, 120.0, 19.0 ],
 					"id" : "obj-8",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -103,12 +156,12 @@
 					"maxclass" : "message",
 					"text" : "clear",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 10.0, 181.0, 37.0, 18.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"patching_rect" : [ 9.0, 183.0, 37.0, 18.0 ],
 					"id" : "obj-5",
-					"numoutlets" : 1
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -117,12 +170,12 @@
 					"maxclass" : "message",
 					"text" : "open",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 381.0, 118.0, 37.0, 18.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"patching_rect" : [ 374.0, 168.0, 37.0, 18.0 ],
 					"id" : "obj-4",
-					"numoutlets" : 1
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -131,12 +184,12 @@
 					"maxclass" : "newobj",
 					"text" : "coll myname",
 					"outlettype" : [ "", "", "", "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 381.0, 142.0, 78.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"patching_rect" : [ 374.0, 192.0, 78.0, 20.0 ],
 					"id" : "obj-3",
+					"numinlets" : 1,
 					"numoutlets" : 4,
+					"fontname" : "Arial",
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -147,13 +200,13 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "dependencies: p.lcdrectselect",
-					"fontname" : "Arial",
-					"patching_rect" : [ 384.0, 62.0, 172.0, 20.0 ],
+					"text" : "dependencies",
 					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"patching_rect" : [ 456.0, 67.0, 89.0, 20.0 ],
 					"id" : "obj-18",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -162,12 +215,12 @@
 					"maxclass" : "comment",
 					"text" : "Click the mouse, drag it, then release it on the lcd object to create a selection area.",
 					"linecount" : 4,
-					"fontname" : "Arial",
-					"patching_rect" : [ 216.0, 71.0, 150.0, 62.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"patching_rect" : [ 210.0, 75.0, 149.0, 57.0 ],
 					"id" : "obj-14",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -175,12 +228,12 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "print lcdrectselect",
-					"fontname" : "Arial",
-					"patching_rect" : [ 72.0, 256.0, 104.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"patching_rect" : [ 65.0, 257.0, 104.0, 20.0 ],
 					"id" : "obj-6",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -188,12 +241,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "B",
-					"fontname" : "Arial",
-					"patching_rect" : [ 307.0, 144.0, 23.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"patching_rect" : [ 300.0, 148.0, 22.0, 19.0 ],
 					"id" : "obj-2",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -201,12 +254,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "G",
-					"fontname" : "Arial",
-					"patching_rect" : [ 265.0, 144.0, 21.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"patching_rect" : [ 258.0, 148.0, 20.0, 19.0 ],
 					"id" : "obj-7",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -214,57 +267,57 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "R",
-					"fontname" : "Arial",
-					"patching_rect" : [ 219.0, 144.0, 20.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"patching_rect" : [ 212.0, 148.0, 19.0, 19.0 ],
 					"id" : "obj-10",
-					"numoutlets" : 0
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"fontname" : "Arial"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "number",
-					"outlettype" : [ "int", "bang" ],
-					"fontname" : "Arial",
 					"minimum" : 0,
-					"patching_rect" : [ 309.0, 168.0, 40.0, 20.0 ],
-					"fontsize" : 12.0,
+					"outlettype" : [ "int", "bang" ],
 					"maximum" : 255,
-					"numinlets" : 1,
+					"fontsize" : 12.0,
+					"patching_rect" : [ 302.0, 169.0, 40.0, 20.0 ],
 					"id" : "obj-20",
-					"numoutlets" : 2
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"fontname" : "Arial"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "number",
-					"outlettype" : [ "int", "bang" ],
-					"fontname" : "Arial",
 					"minimum" : 0,
-					"patching_rect" : [ 264.0, 168.0, 40.0, 20.0 ],
-					"fontsize" : 12.0,
+					"outlettype" : [ "int", "bang" ],
 					"maximum" : 255,
-					"numinlets" : 1,
+					"fontsize" : 12.0,
+					"patching_rect" : [ 257.0, 169.0, 40.0, 20.0 ],
 					"id" : "obj-21",
-					"numoutlets" : 2
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"fontname" : "Arial"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "number",
-					"outlettype" : [ "int", "bang" ],
-					"fontname" : "Arial",
 					"minimum" : 0,
-					"patching_rect" : [ 218.0, 168.0, 40.0, 20.0 ],
-					"fontsize" : 12.0,
+					"outlettype" : [ "int", "bang" ],
 					"maximum" : 255,
-					"numinlets" : 1,
+					"fontsize" : 12.0,
+					"patching_rect" : [ 211.0, 169.0, 40.0, 20.0 ],
 					"id" : "obj-22",
-					"numoutlets" : 2
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -273,12 +326,12 @@
 					"maxclass" : "newobj",
 					"text" : "pack 0 0 0",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 218.0, 194.0, 110.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 3,
+					"patching_rect" : [ 211.0, 195.0, 110.0, 20.0 ],
 					"id" : "obj-24",
-					"numoutlets" : 1
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -286,9 +339,9 @@
 				"box" : 				{
 					"maxclass" : "lcd",
 					"outlettype" : [ "list", "list", "int", "" ],
-					"patching_rect" : [ 72.0, 83.0, 136.0, 135.0 ],
-					"numinlets" : 1,
+					"patching_rect" : [ 65.0, 84.0, 136.0, 135.0 ],
 					"id" : "obj-1",
+					"numinlets" : 1,
 					"numoutlets" : 4
 				}
 
@@ -298,60 +351,12 @@
 					"maxclass" : "newobj",
 					"text" : "p.lcdmultirectselect myname 10 20 50",
 					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 72.0, 226.0, 212.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 3,
+					"patching_rect" : [ 65.0, 227.0, 212.0, 20.0 ],
 					"id" : "obj-17",
-					"numoutlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"varname" : "autohelp_top_title",
-					"text" : "p.lcdmultirectselect",
-					"fontname" : "Arial",
-					"frgb" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"textcolor" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"patching_rect" : [ 8.0, 9.0, 243.0, 30.0 ],
-					"fontface" : 3,
-					"fontsize" : 20.871338,
-					"numinlets" : 1,
-					"id" : "obj-9",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"varname" : "autohelp_top_digest",
-					"text" : "Selects many rectangular areas in a lcd object.",
-					"fontname" : "Arial",
-					"frgb" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"textcolor" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"patching_rect" : [ 7.0, 36.0, 288.0, 21.0 ],
-					"fontsize" : 12.754705,
-					"numinlets" : 1,
-					"id" : "obj-11",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "panel",
-					"varname" : "autohelp_top_panel",
-					"mode" : 1,
-					"patching_rect" : [ 4.0, 5.0, 552.0, 53.0 ],
-					"numinlets" : 1,
-					"id" : "obj-16",
-					"background" : 1,
-					"grad1" : [ 0.27, 0.35, 0.47, 1.0 ],
-					"numoutlets" : 0,
-					"grad2" : [ 0.85, 0.85, 0.85, 1.0 ]
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -397,7 +402,7 @@
 					"source" : [ "obj-24", 0 ],
 					"destination" : [ "obj-17", 2 ],
 					"hidden" : 0,
-					"midpoints" : [ 227.5, 219.5, 274.5, 219.5 ]
+					"midpoints" : [ 220.5, 220.5, 267.5, 220.5 ]
 				}
 
 			}
@@ -406,7 +411,7 @@
 					"source" : [ "obj-17", 0 ],
 					"destination" : [ "obj-1", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 81.5, 250.0, 60.5, 250.0, 60.5, 78.0, 81.5, 78.0 ]
+					"midpoints" : [ 74.5, 251.0, 53.5, 251.0, 53.5, 79.0, 74.5, 79.0 ]
 				}
 
 			}
@@ -424,7 +429,7 @@
 					"source" : [ "obj-1", 2 ],
 					"destination" : [ "obj-17", 1 ],
 					"hidden" : 0,
-					"midpoints" : [ 159.5, 222.0, 178.0, 222.0 ]
+					"midpoints" : [ 152.5, 223.0, 171.0, 223.0 ]
 				}
 
 			}
