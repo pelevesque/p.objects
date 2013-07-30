@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 1872.0, 67.0, 403.0, 153.0 ],
+		"rect" : [ 452.0, 393.0, 404.0, 150.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 1872.0, 67.0, 403.0, 153.0 ],
+		"defrect" : [ 452.0, 393.0, 404.0, 150.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -17,11 +17,24 @@
 		"imprint" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"maxclass" : "outlet",
+					"maxclass" : "comment",
+					"text" : "© 2013, Pierre-Emmanuel Lévesque",
+					"fontsize" : 10.0,
+					"patching_rect" : [ 230.0, 128.0, 171.0, 18.0 ],
+					"id" : "obj-5",
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 114.0, 25.0, 25.0 ],
+					"fontname" : "Arial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "outlet",
+					"patching_rect" : [ 19.0, 112.0, 25.0, 25.0 ],
 					"id" : "obj-11",
 					"numinlets" : 1,
+					"numoutlets" : 0,
 					"comment" : "(bool) is the coordinate in the box"
 				}
 
@@ -30,13 +43,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "if $i1 >= $i3 && $i1 <= $i5 && $i2 >= $i4 && $i2 <= $i6 then 1 else 0",
-					"numoutlets" : 1,
-					"patching_rect" : [ 19.0, 82.0, 371.0, 20.0 ],
-					"id" : "obj-7",
-					"fontname" : "Arial",
 					"outlettype" : [ "" ],
 					"fontsize" : 12.0,
-					"numinlets" : 6
+					"patching_rect" : [ 19.0, 80.0, 371.0, 20.0 ],
+					"id" : "obj-7",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -44,13 +57,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "unpack 0 0",
-					"numoutlets" : 2,
-					"patching_rect" : [ 19.0, 52.0, 89.0, 20.0 ],
-					"id" : "obj-4",
-					"fontname" : "Arial",
 					"outlettype" : [ "int", "int" ],
 					"fontsize" : 12.0,
-					"numinlets" : 1
+					"patching_rect" : [ 19.0, 53.0, 89.0, 20.0 ],
+					"id" : "obj-4",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"fontname" : "Arial"
 				}
 
 			}
@@ -58,24 +71,24 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "unpack 0 0 0 0",
-					"numoutlets" : 4,
-					"patching_rect" : [ 160.0, 52.0, 230.0, 20.0 ],
-					"id" : "obj-3",
-					"fontname" : "Arial",
 					"outlettype" : [ "int", "int", "int", "int" ],
 					"fontsize" : 12.0,
-					"numinlets" : 1
+					"patching_rect" : [ 160.0, 53.0, 230.0, 20.0 ],
+					"id" : "obj-3",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"fontname" : "Arial"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "inlet",
-					"numoutlets" : 1,
-					"patching_rect" : [ 160.0, 15.0, 25.0, 25.0 ],
-					"id" : "obj-2",
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 160.0, 16.0, 25.0, 25.0 ],
+					"id" : "obj-2",
 					"numinlets" : 0,
+					"numoutlets" : 1,
 					"comment" : "(list) box's opposite corners [x1, y1, x2, y2]"
 				}
 
@@ -83,11 +96,11 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "inlet",
-					"numoutlets" : 1,
-					"patching_rect" : [ 19.0, 15.0, 25.0, 25.0 ],
-					"id" : "obj-1",
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 19.0, 16.0, 25.0, 25.0 ],
+					"id" : "obj-1",
 					"numinlets" : 0,
+					"numoutlets" : 1,
 					"comment" : "(list) coordinate to check [x, y]"
 				}
 
