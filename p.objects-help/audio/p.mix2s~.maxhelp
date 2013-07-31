@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 923.0, 120.0, 357.0, 254.0 ],
+		"rect" : [ 825.0, 55.0, 368.0, 252.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 923.0, 120.0, 357.0, 254.0 ],
+		"defrect" : [ 825.0, 55.0, 368.0, 252.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -18,68 +18,110 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "arg:\n1) fade delay time in ms (required)",
+					"varname" : "autohelp_top_title[1]",
+					"text" : "p.mix2s~",
+					"fontsize" : 20.899994,
+					"numoutlets" : 0,
+					"id" : "obj-18",
+					"fontname" : "Arial",
+					"patching_rect" : [ 8.0, 4.0, 149.0, 31.0 ],
+					"numinlets" : 1,
+					"fontface" : 3
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"varname" : "autohelp_top_digest[1]",
+					"text" : "Signal based 2 channel mixer.",
+					"fontsize" : 12.754705,
+					"numoutlets" : 0,
+					"id" : "obj-19",
+					"fontname" : "Arial",
+					"patching_rect" : [ 8.0, 33.0, 299.0, 21.0 ],
+					"numinlets" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "panel",
+					"numoutlets" : 0,
+					"rounded" : 0,
+					"id" : "obj-20",
+					"patching_rect" : [ 0.0, 0.0, 368.0, 60.0 ],
+					"numinlets" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "Args:\n1) Fade delay time in ms. (required)",
 					"linecount" : 2,
-					"fontname" : "Arial",
-					"patching_rect" : [ 67.0, 190.0, 203.0, 34.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"numoutlets" : 0,
 					"id" : "obj-15",
-					"numoutlets" : 0
+					"fontname" : "Arial",
+					"patching_rect" : [ 92.0, 162.0, 187.0, 32.0 ],
+					"numinlets" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "mix amount (-1 = signal 1, 1 = signal 2)",
-					"fontname" : "Arial",
-					"patching_rect" : [ 131.0, 135.0, 218.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"text" : "Miix amount (-1 = signal 1, 1 = signal 2)",
+					"fontsize" : 11.0,
+					"numoutlets" : 0,
 					"id" : "obj-8",
-					"numoutlets" : 0
+					"fontname" : "Arial",
+					"patching_rect" : [ 129.0, 133.0, 201.0, 19.0 ],
+					"numinlets" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "audio signal 2",
-					"fontname" : "Arial",
-					"patching_rect" : [ 115.0, 105.0, 85.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"text" : "Audio signal 2",
+					"fontsize" : 11.0,
+					"numoutlets" : 0,
 					"id" : "obj-6",
-					"numoutlets" : 0
+					"fontname" : "Arial",
+					"patching_rect" : [ 112.0, 102.0, 78.0, 19.0 ],
+					"numinlets" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "audio signal 1",
-					"fontname" : "Arial",
-					"patching_rect" : [ 87.0, 75.0, 83.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"text" : "Audio signal 1",
+					"fontsize" : 11.0,
+					"numoutlets" : 0,
 					"id" : "obj-5",
-					"numoutlets" : 0
+					"fontname" : "Arial",
+					"patching_rect" : [ 83.0, 72.0, 78.0, 19.0 ],
+					"numinlets" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "number~",
-					"outlettype" : [ "signal", "float" ],
-					"fontname" : "Arial",
-					"mode" : 1,
-					"patching_rect" : [ 73.0, 135.0, 56.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
-					"id" : "obj-4",
+					"maximum" : 1.0,
 					"numoutlets" : 2,
-					"sig" : 0.0
+					"sig" : 0.0,
+					"outlettype" : [ "signal", "float" ],
+					"mode" : 1,
+					"id" : "obj-4",
+					"fontname" : "Arial",
+					"minimum" : -1.0,
+					"patching_rect" : [ 70.0, 132.0, 56.0, 20.0 ],
+					"numinlets" : 2
 				}
 
 			}
@@ -87,13 +129,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "cycle~ 750",
-					"outlettype" : [ "signal" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 45.0, 105.0, 68.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
 					"id" : "obj-3",
-					"numoutlets" : 1
+					"fontname" : "Arial",
+					"patching_rect" : [ 42.0, 102.0, 68.0, 20.0 ],
+					"numinlets" : 2
 				}
 
 			}
@@ -101,25 +143,25 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "cycle~ 200",
-					"outlettype" : [ "signal" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 16.0, 75.0, 68.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
 					"id" : "obj-2",
-					"numoutlets" : 1
+					"fontname" : "Arial",
+					"patching_rect" : [ 13.0, 72.0, 68.0, 20.0 ],
+					"numinlets" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "button",
-					"outlettype" : [ "bang" ],
+					"numoutlets" : 1,
 					"hidden" : 1,
-					"patching_rect" : [ 193.0, 173.0, 20.0, 20.0 ],
-					"numinlets" : 1,
+					"outlettype" : [ "bang" ],
 					"id" : "obj-7",
-					"numoutlets" : 1
+					"patching_rect" : [ 239.0, 61.0, 20.0, 20.0 ],
+					"numinlets" : 1
 				}
 
 			}
@@ -127,14 +169,14 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "pcontrol",
-					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"hidden" : 1,
-					"patching_rect" : [ 193.0, 221.0, 53.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 1,
+					"numoutlets" : 1,
+					"hidden" : 1,
+					"outlettype" : [ "" ],
 					"id" : "obj-10",
-					"numoutlets" : 1
+					"fontname" : "Arial",
+					"patching_rect" : [ 239.0, 111.0, 53.0, 20.0 ],
+					"numinlets" : 1
 				}
 
 			}
@@ -142,14 +184,14 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "help p.objects-guide",
-					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"hidden" : 1,
-					"patching_rect" : [ 193.0, 199.0, 118.0, 18.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"numoutlets" : 1,
+					"hidden" : 1,
+					"outlettype" : [ "" ],
 					"id" : "obj-12",
-					"numoutlets" : 1
+					"fontname" : "Arial",
+					"patching_rect" : [ 239.0, 88.0, 118.0, 18.0 ],
+					"numinlets" : 2
 				}
 
 			}
@@ -157,36 +199,23 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "p.objects guide",
-					"outlettype" : [ "" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 254.0, 223.0, 92.0, 18.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"id" : "obj-13",
-					"numoutlets" : 1
+					"fontname" : "Arial",
+					"patching_rect" : [ 264.0, 221.0, 92.0, 18.0 ],
+					"numinlets" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "ezdac~",
-					"patching_rect" : [ 16.0, 198.0, 45.0, 45.0 ],
-					"numinlets" : 2,
+					"numoutlets" : 0,
 					"id" : "obj-1",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "dependencies: none",
-					"fontname" : "Arial",
-					"patching_rect" : [ 238.0, 60.0, 118.0, 20.0 ],
-					"fontsize" : 12.0,
-					"numinlets" : 1,
-					"id" : "obj-21",
-					"numoutlets" : 0
+					"patching_rect" : [ 13.0, 195.0, 45.0, 45.0 ],
+					"numinlets" : 2
 				}
 
 			}
@@ -194,61 +223,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "p.mix2s~ 10",
-					"outlettype" : [ "signal" ],
-					"fontname" : "Arial",
-					"patching_rect" : [ 16.0, 166.0, 76.0, 20.0 ],
 					"fontsize" : 12.0,
-					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
 					"id" : "obj-17",
-					"numoutlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"varname" : "autohelp_top_title",
-					"text" : "p.mix2s~",
 					"fontname" : "Arial",
-					"frgb" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"textcolor" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"patching_rect" : [ 8.0, 9.0, 249.0, 30.0 ],
-					"fontface" : 3,
-					"fontsize" : 20.871338,
-					"numinlets" : 1,
-					"id" : "obj-9",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"varname" : "autohelp_top_digest",
-					"text" : "Signal based 2 channel mixer.",
-					"fontname" : "Arial",
-					"frgb" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"textcolor" : [ 0.93, 0.93, 0.97, 1.0 ],
-					"patching_rect" : [ 7.0, 36.0, 244.0, 21.0 ],
-					"fontsize" : 12.754705,
-					"numinlets" : 1,
-					"id" : "obj-11",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "panel",
-					"varname" : "autohelp_top_panel",
-					"mode" : 1,
-					"patching_rect" : [ 4.0, 5.0, 349.0, 52.0 ],
-					"numinlets" : 1,
-					"id" : "obj-16",
-					"background" : 1,
-					"grad1" : [ 0.27, 0.35, 0.47, 1.0 ],
-					"numoutlets" : 0,
-					"grad2" : [ 0.85, 0.85, 0.85, 1.0 ]
+					"patching_rect" : [ 13.0, 163.0, 76.0, 20.0 ],
+					"numinlets" : 3
 				}
 
 			}
