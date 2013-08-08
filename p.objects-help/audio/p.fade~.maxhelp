@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 426.0, 64.0, 430.0, 304.0 ],
+		"rect" : [ 393.0, 73.0, 430.0, 303.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 426.0, 64.0, 430.0, 304.0 ],
+		"defrect" : [ 393.0, 73.0, 430.0, 303.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -16,6 +16,83 @@
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "p.switcharoo",
+					"patching_rect" : [ 331.0, 96.0, 72.0, 19.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"id" : "obj-32",
+					"numoutlets" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "p.block",
+					"patching_rect" : [ 342.0, 79.0, 54.0, 19.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"id" : "obj-26",
+					"numoutlets" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "dependencies",
+					"patching_rect" : [ 326.0, 61.0, 84.0, 19.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"id" : "obj-27",
+					"numoutlets" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "The fades automatically alternate between fadein and fadeout. The first fade is a fadein.",
+					"linecount" : 2,
+					"patching_rect" : [ 13.0, 71.0, 228.0, 32.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"id" : "obj-5",
+					"numoutlets" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "comment",
+					"text" : "triggers a fade",
+					"patching_rect" : [ 64.0, 143.0, 113.0, 19.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
+					"fontsize" : 11.0,
+					"id" : "obj-4",
+					"numoutlets" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "button",
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 43.0, 143.0, 20.0, 20.0 ],
+					"numinlets" : 1,
+					"id" : "obj-3",
+					"numoutlets" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "end of fade marker\n(0 = ended fade out)\n(1 = ended fade in)",
@@ -38,32 +115,6 @@
 					"numinlets" : 1,
 					"fontsize" : 11.0,
 					"id" : "obj-24",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "1 = triggers fade in",
-					"patching_rect" : [ 97.0, 135.0, 139.0, 19.0 ],
-					"fontname" : "Arial",
-					"numinlets" : 1,
-					"fontsize" : 11.0,
-					"id" : "obj-23",
-					"numoutlets" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "0 = triggers fade out",
-					"patching_rect" : [ 78.0, 111.0, 139.0, 19.0 ],
-					"fontname" : "Arial",
-					"numinlets" : 1,
-					"fontsize" : 11.0,
-					"id" : "obj-21",
 					"numoutlets" : 0
 				}
 
@@ -119,34 +170,6 @@
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "message",
-					"text" : "1",
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 62.0, 136.0, 32.5, 18.0 ],
-					"fontname" : "Arial",
-					"numinlets" : 2,
-					"fontsize" : 12.0,
-					"id" : "obj-6",
-					"numoutlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "message",
-					"text" : "0",
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 112.0, 32.5, 18.0 ],
-					"fontname" : "Arial",
-					"numinlets" : 2,
-					"fontsize" : 12.0,
-					"id" : "obj-4",
-					"numoutlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"maxclass" : "comment",
 					"varname" : "autohelp_top_title[1]",
 					"text" : "p.fade~",
@@ -164,7 +187,7 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"varname" : "autohelp_top_digest[1]",
-					"text" : "Implements linear fade ins and fade outs on a monophonic signal.",
+					"text" : "Implements linear fadeins and fadeouts on a monophonic signal.",
 					"patching_rect" : [ 8.0, 33.0, 387.0, 21.0 ],
 					"fontname" : "Arial",
 					"numinlets" : 1,
@@ -204,7 +227,7 @@
 					"maxclass" : "newobj",
 					"text" : "cycle~ 600",
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 14.0, 78.0, 68.0, 20.0 ],
+					"patching_rect" : [ 14.0, 116.0, 68.0, 20.0 ],
 					"fontname" : "Arial",
 					"numinlets" : 2,
 					"fontsize" : 12.0,
@@ -218,7 +241,7 @@
 					"maxclass" : "button",
 					"outlettype" : [ "bang" ],
 					"hidden" : 1,
-					"patching_rect" : [ 300.0, 109.0, 20.0, 20.0 ],
+					"patching_rect" : [ 306.0, 131.0, 20.0, 20.0 ],
 					"numinlets" : 1,
 					"id" : "obj-7",
 					"numoutlets" : 1
@@ -231,7 +254,7 @@
 					"text" : "pcontrol",
 					"outlettype" : [ "" ],
 					"hidden" : 1,
-					"patching_rect" : [ 300.0, 159.0, 53.0, 20.0 ],
+					"patching_rect" : [ 306.0, 181.0, 53.0, 20.0 ],
 					"fontname" : "Arial",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
@@ -246,7 +269,7 @@
 					"text" : "help p.objects-guide",
 					"outlettype" : [ "" ],
 					"hidden" : 1,
-					"patching_rect" : [ 300.0, 136.0, 118.0, 18.0 ],
+					"patching_rect" : [ 306.0, 158.0, 118.0, 18.0 ],
 					"fontname" : "Arial",
 					"numinlets" : 2,
 					"fontsize" : 12.0,
@@ -283,7 +306,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "p.fade~ 10",
-					"outlettype" : [ "signal", "int" ],
+					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 14.0, 199.0, 76.0, 20.0 ],
 					"fontname" : "Arial",
 					"numinlets" : 3,
@@ -293,20 +316,23 @@
 				}
 
 			}
- ],
-		"lines" : [ 			{
-				"patchline" : 				{
-					"source" : [ "obj-16", 0 ],
-					"destination" : [ "obj-17", 2 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
+, 			{
+				"box" : 				{
+					"maxclass" : "panel",
+					"bgcolor" : [ 0.901961, 0.901961, 0.901961, 1.0 ],
+					"patching_rect" : [ 320.0, 21.0, 90.0, 99.0 ],
+					"rounded" : 20,
+					"numinlets" : 1,
+					"id" : "obj-37",
+					"numoutlets" : 0
 				}
 
 			}
-, 			{
+ ],
+		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-2", 0 ],
-					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-17", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -315,9 +341,9 @@
 , 			{
 				"patchline" : 				{
 					"source" : [ "obj-17", 1 ],
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 80.5, 254.0, 155.5, 254.0 ]
+					"midpoints" : [  ]
 				}
 
 			}
@@ -333,7 +359,16 @@
 , 			{
 				"patchline" : 				{
 					"source" : [ "obj-17", 1 ],
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-14", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 80.5, 254.0, 155.5, 254.0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-2", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -341,17 +376,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-6", 0 ],
-					"destination" : [ "obj-17", 1 ],
-					"hidden" : 0,
-					"midpoints" : [ 71.5, 159.0, 52.0, 159.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-4", 0 ],
-					"destination" : [ "obj-17", 1 ],
+					"source" : [ "obj-16", 0 ],
+					"destination" : [ "obj-17", 2 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -359,8 +385,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-17", 0 ],
-					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-3", 0 ],
+					"destination" : [ "obj-17", 1 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
