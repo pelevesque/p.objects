@@ -42,14 +42,13 @@
  * set        (specific buffers) (attr/value pairs)
  * reset      (specific buffers)
  * clear      (specific buffers)
- * loadfile   (specific buffers) (@path 'afilepath')
- * loadfolder (specific buffers) (@path 'afolderpath')
+ * loadfile   (specific buffers) ('afilepath')
+ * loadfolder (specific buffers) ('afolderpath')
  *
  * 'specific buffers' is a list of buffer ids. Ex: [1 2 4]
  * If no buffers are specified, the command applies to all buffers.
  *
- * 'attr/value pairs' are attribute value pairs. Ex: @pan 1.0
- * All attributes must be prefixed with the '@' symbol.
+ * 'attr/value pairs' are attribute value pairs. Ex: pan 1.0
  *
  * Examples:
  *
@@ -69,13 +68,13 @@
  * loadfolder
  *
  * - loads all buffers using a folder path
- * loadfolder @path 'a folder path'
+ * loadfolder 'a folder path'
  *
  * - loads buffers 2, 3, and 54 using a dialog to a folder
  * loadfolder 2 3 54
  *
  * - loads buffers 2, 3, and 54 using folder path
- * loadfolder 2 3 54 @path 'a folder path'
+ * loadfolder 2 3 54 'a folder path'
  */
 
 /**
@@ -86,21 +85,28 @@
 var inlets = 1;
 var outlets = 4;
 
-// Set default attributes.
-var defaultattributes = [
-	{name:"loop", value:0},
-	{name:"fadeenvpeak", value:8192.},
-	{name:"speed", value:1.},
-	{name:"percentage", value:1.},
-	{name:"starttime", value:0.},
-	{name:"endtime", value:"bang"}, // bang resets endtime
-	{name:"gain", value:1.},
-	{name:"pan", value:0.},
-	{name:"panfadetime", value:30}
+// Set supported commands.
+var supportedcommands = [
+	"play",
+	"stop",
+	"set",
+	"reset",
+	"clear",
+	"loadfile",
+	"loadfolder"
 ];
 
-// Set supported commands.
-var supportedcommands = ["play", "stop", "set", "reset", "clear", "loadfile", "loadfolder"];
+// Set default attributes.
+var defaultattributes = [
+	"loop 0",
+	"speed 1",
+	"percentage 1",
+	"starttime 0",
+	"endtime bang", // bang resets endtime
+	"gain 1",
+	"pan 0",
+	"panfadetime 20"
+];
 
 /**
  * Handles all incoming calls.
@@ -111,69 +117,82 @@ var supportedcommands = ["play", "stop", "set", "reset", "clear", "loadfile", "l
 function anything()
 {
 	// Get the arguments array.
-	// Note: messagename is our command.
 	var args = arrayfromargs(messagename, arguments);
 
 	// Make sure the command is supported.
 	if (supportedcommands.indexOf(messagename) != -1)
 	{
-		// Get the affected buffers.
-		var buffers = [];
+		// Set command since messagename cannot be changed.
+		var command = messagename;
+		
+		// Send start bang.
+		outlet(3, 'bang');
+
+		// Send specified buffers.
+		var specifiedbuffers = false;
+		var intRegex = /^\d+$/;
 		for (var i=1; i<args.length; i++)
 		{
-			// Note: ??? Strange that we need toString() here,
-			// but not when getting attributes.
-			if (args[i].toString().substr(0, 1) != '@')
+			// Specified buffers must be integers.
+			if (intRegex.test(args[i]))
 			{
-				buffers.push(args[i]);
+				// Specified buffers must be between 0 and 87.
+				if (args[i] > -1 && args[i] < 88)
+				{
+					outlet(2, args[i]);
+					specifiedbuffers = true;
+				}
 			}
+			// A non int means we have reached attributes.
 			else
 			{
 				break;
 			}
 		}
 
-		// If no buffers are chosen, set to -1. (-1 = all buffers)
-		if (buffers.length == 0)
+		// If no specified buffers, sent -1 for "all buffers".
+		if (specifiedbuffers == false)
 		{
-			buffers.push(-1);
+			outlet(2, -1);
 		}
 
-		// Get the attributes.
-		var attributes = [];
-		if (messagename == 'play' || messagename == 'set' || messagename == 'loadfile' || messagename == 'loadfolder')
+		// Send attributes for play and set.
+		if (command == 'play' || command == 'set')
 		{
-			// Note: i is already at the correct index because of the loop to get buffers.
+			// Note: i is already the correct index because of the loop to get buffers.
 			for (i; i<args.length; i = i + 2)
 			{
-				attributes.push({name:args[i].substr(1), value:args[i+1]});
+				outlet(1, args[i] + ' ' + args[i+1]);
 			}
 		}
-		else if (messagename == 'reset')
+		// Send attributes for reset.
+		else if (command == 'reset')
 		{
-			attributes = defaultattributes;
-		}
-
-		// Send start bang. (outlet 4)
-		outlet(3, 'bang');
-
-		// Send the attributes. (outlet 3)
-		if (messagename == "play" || messagename == "set" || messagename == "loadfile" || messagename == "loadfolder")
-		{
-			for (var i in attributes)
+			for (var i in defaultattributes)
 			{
-				outlet(2, attributes[i].name + ' ' + attributes[i].value);
+				outlet(1, defaultattributes[i]);
 			}
 		}
 
-		// Send the buffers. (outlet 2)
-		outlet(1, 'clear');
-		for (var i in buffers)
+		// For loadfile and loadfolder, attach path to command if there is one.
+		if (command == 'loadfile' || command == 'loadfolder')
 		{
-			outlet(1, buffers[i]);
+			// Note: i is already the correct index because of the loop to get buffers. 
+			if (typeof(args[i]) !== 'undefined')
+			{
+				var path = args[i];
+
+				// Make sure the path doesn't have spaces.
+				for (i = i + 1; i<args.length; i++)
+				{
+					path += ' ' + args[i];
+				}
+
+				command += ' ' + path;
+			}
 		}
 
-		// Send the command. (outlet 1)
-		outlet(0, messagename);
+		// Send command.
+		outlet(0, command);
 	}
 }
