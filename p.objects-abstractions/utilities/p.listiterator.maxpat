@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 323.0, 79.0, 540.0, 527.0 ],
+		"rect" : [ 585.0, 247.0, 500.0, 516.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,7 +41,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-31",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -53,7 +53,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-30",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -69,7 +69,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 328.0, 136.0, 150.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Bug when set to go down, the count does not reset to max number, but one under the max"
 				}
 
@@ -78,11 +77,11 @@
 				"box" : 				{
 					"comment" : "bang or list",
 					"id" : "obj-29",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 77.0, 22.0, 30.0, 30.0 ]
 				}
 
@@ -91,7 +90,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-27",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -115,7 +114,7 @@
 				"box" : 				{
 					"comment" : "count direction",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -142,7 +141,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 550.0, 324.0, 466.0, 429.0 ],
+						"rect" : [ 550.0, 324.0, 463.0, 450.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -252,7 +251,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 157.0, 101.0, 30.0, 30.0 ]
+									"patching_rect" : [ 130.5, 101.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -264,7 +263,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 157.0, 153.0, 50.0, 22.0 ]
+									"patching_rect" : [ 130.5, 153.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -295,8 +294,18 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"midpoints" : [ 25.5, 73.0, 193.0, 73.0 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-68", 4 ],
 									"midpoints" : [ 25.5, 57.0, 246.0, 57.0 ],
+									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -707,9 +716,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
