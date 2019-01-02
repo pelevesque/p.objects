@@ -1,394 +1,420 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 64.0, 173.0, 311.0, 377.0 ],
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 2,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "box",
+		"rect" : [ 89.0, 100.0, 311.0, 377.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 64.0, 173.0, 311.0, 377.0 ],
-		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"maxclass" : "number",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-19",
-					"fontname" : "Arial",
+					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"fontsize" : 12.0,
-					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 13.0, 225.0, 50.0, 20.0 ]
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 13.0, 225.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "number",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-18",
-					"fontname" : "Arial",
+					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"fontsize" : 12.0,
-					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 54.0, 167.0, 50.0, 20.0 ]
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 54.0, 167.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "number",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-8",
-					"fontname" : "Arial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"fontsize" : 12.0,
-					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 13.0, 342.0, 50.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"maxclass" : "number",
-					"id" : "obj-6",
-					"fontname" : "Arial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"fontsize" : 12.0,
-					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 64.0, 281.0, 50.0, 20.0 ]
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 13.0, 342.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "loadmess 1",
-					"id" : "obj-7",
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 64.0, 281.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"hidden" : 1,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"fontsize" : 12.0,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 255.0, 72.0, 20.0 ]
+					"patching_rect" : [ 13.0, 255.0, 72.0, 22.0 ],
+					"text" : "loadmess 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "This object is like gate except that when the gate is closed, the last value entered is saved. When the gate reopens, that value is sent out if it is different than the last value sent while the gate was previously opened.",
-					"linecount" : 4,
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
 					"id" : "obj-16",
-					"fontname" : "Arial",
+					"linecount" : 4,
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"fontsize" : 11.0,
-					"patching_rect" : [ 9.0, 70.0, 279.0, 57.0 ]
+					"patching_rect" : [ 9.0, 70.0, 279.0, 56.0 ],
+					"text" : "This object is like gate except that when the gate is closed, the last value entered is saved. When the gate reopens, that value is sent out if it is different than the last value sent while the gate was previously opened."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "args\n1) gate status (optional)\n   (0 = closed, 1 = opened) (def: 0)",
-					"linecount" : 3,
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
 					"id" : "obj-24",
-					"fontname" : "Arial",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"fontsize" : 11.0,
-					"patching_rect" : [ 73.0, 220.0, 181.0, 44.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"linecount" : 3,
 					"maxclass" : "comment",
-					"text" : "gate status",
-					"id" : "obj-15",
-					"fontname" : "Arial",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"fontsize" : 11.0,
-					"patching_rect" : [ 35.0, 140.0, 68.0, 19.0 ]
+					"patching_rect" : [ 73.0, 220.0, 181.0, 43.0 ],
+					"text" : "args\n1) gate status (optional)\n   (0 = closed, 1 = opened) (def: 0)"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "toggle",
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 35.0, 140.0, 68.0, 19.0 ],
+					"text" : "gate status"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 13.0, 140.0, 20.0, 20.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "initialize with an open gate",
-					"id" : "obj-12",
 					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"fontsize" : 11.0,
-					"patching_rect" : [ 85.0, 310.0, 139.0, 19.0 ]
+					"patching_rect" : [ 85.0, 310.0, 139.0, 19.0 ],
+					"text" : "initialize with an open gate"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "toggle",
 					"id" : "obj-10",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 13.0, 281.0, 20.0, 20.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "see p.gatem.f for floats",
-					"id" : "obj-27",
 					"fontname" : "Arial",
-					"numinlets" : 1,
-					"numoutlets" : 0,
 					"fontsize" : 11.0,
-					"patching_rect" : [ 188.0, 2.0, 120.0, 19.0 ]
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 188.0, 2.0, 120.0, 19.0 ],
+					"text" : "see p.gatem.f for floats"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"varname" : "autohelp_top_title",
-					"text" : "p.gatem.i",
-					"id" : "obj-9",
-					"fontname" : "Arial",
-					"numinlets" : 1,
-					"numoutlets" : 0,
 					"fontface" : 3,
+					"fontname" : "Arial",
 					"fontsize" : 20.899994,
-					"patching_rect" : [ 8.0, 4.0, 112.0, 31.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"id" : "obj-9",
 					"maxclass" : "comment",
-					"varname" : "autohelp_top_digest",
-					"text" : "A gate for ints with a memory system.",
-					"id" : "obj-11",
-					"fontname" : "Arial",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"fontsize" : 12.754705,
-					"patching_rect" : [ 8.0, 33.0, 235.0, 21.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "panel",
-					"rounded" : 0,
-					"id" : "obj-20",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 311.0, 62.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "p.gatem.i 1",
-					"id" : "obj-17",
-					"fontname" : "Arial",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"fontsize" : 12.0,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 310.0, 70.0, 20.0 ],
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "newobj",
+					"patching_rect" : [ 8.0, 4.0, 112.0, 30.0 ],
 					"text" : "p.gatem.i",
-					"id" : "obj-2",
-					"fontname" : "Arial",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"fontsize" : 12.0,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 196.0, 60.0, 20.0 ],
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ]
+					"varname" : "autohelp_top_title"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "button",
-					"id" : "obj-1",
+					"fontname" : "Arial",
+					"fontsize" : 12.754705,
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 8.0, 33.0, 235.0, 21.0 ],
+					"text" : "A gate for ints with a memory system.",
+					"varname" : "autohelp_top_digest"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.992156862745098, 0.894117647058824, 0.643137254901961, 1.0 ],
+					"id" : "obj-20",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 0.0, 311.0, 62.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 13.0, 310.0, 70.0, 22.0 ],
+					"text" : "p.gatem.i 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 13.0, 196.0, 60.0, 22.0 ],
+					"text" : "p.gatem.i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"hidden" : 1,
+					"id" : "obj-1",
+					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 149.0, 134.0, 20.0, 20.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "pcontrol",
-					"id" : "obj-3",
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"hidden" : 1,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"fontsize" : 12.0,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 182.0, 53.0, 20.0 ]
+					"patching_rect" : [ 149.0, 182.0, 53.0, 22.0 ],
+					"text" : "pcontrol"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "message",
-					"text" : "help p.objects-guide",
-					"id" : "obj-4",
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"hidden" : 1,
+					"id" : "obj-4",
+					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"fontsize" : 12.0,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 160.0, 118.0, 18.0 ]
+					"patching_rect" : [ 149.0, 160.0, 118.0, 22.0 ],
+					"text" : "help p.objects-guide"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "message",
-					"text" : "p.objects guide",
-					"id" : "obj-5",
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"fontsize" : 12.0,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.0, 345.0, 92.0, 18.0 ]
+					"patching_rect" : [ 203.0, 345.0, 92.0, 22.0 ],
+					"text" : "p.objects guide"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-2", 0 ],
-					"destination" : [ "obj-19", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-13", 0 ],
-					"destination" : [ "obj-2", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-18", 0 ],
-					"destination" : [ "obj-2", 1 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-17", 0 ],
-					"destination" : [ "obj-8", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-6", 0 ],
-					"destination" : [ "obj-17", 1 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-10", 0 ],
-					"destination" : [ "obj-17", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-5", 0 ],
-					"destination" : [ "obj-1", 0 ],
-					"hidden" : 1,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-1", 0 ],
 					"destination" : [ "obj-4", 0 ],
 					"hidden" : 1,
-					"midpoints" : [  ]
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-4", 0 ],
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"hidden" : 1,
-					"midpoints" : [  ]
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-7", 0 ],
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"hidden" : 1,
-					"midpoints" : [  ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
- ]
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 1 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "p.gatem.i.maxpat",
+				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities",
+				"patcherrelativepath" : "../../p.objects-abstractions/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
