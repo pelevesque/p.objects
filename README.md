@@ -2,4 +2,4 @@
 
 ## About
 
-A collection of objects for Max/MSP
+A collection of objects for Max/MSP.
