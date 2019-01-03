@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 520.0, 297.0, 410.0, 599.0 ],
+		"rect" : [ 174.0, 226.0, 410.0, 599.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -661,8 +661,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 272.0, 369.0, 74.0, 22.0 ],
-					"text" : "p.playboy2~",
+					"patching_rect" : [ 272.0, 369.0, 54.0, 22.0 ],
+					"text" : "p.play2~",
 					"textcolor" : [ 0.968627452850342, 0.968627452850342, 0.968627452850342, 1.0 ]
 				}
 
@@ -686,8 +686,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 272.0, 345.0, 67.0, 22.0 ],
-					"text" : "p.playboy~",
+					"patching_rect" : [ 272.0, 345.0, 48.0, 22.0 ],
+					"text" : "p.play~",
 					"textcolor" : [ 0.968627452850342, 0.968627452850342, 0.968627452850342, 1.0 ]
 				}
 

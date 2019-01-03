@@ -392,7 +392,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 634.0, 0.0, 138.0, 19.0 ],
-					"text" : "see p.playboy2~ for stereo"
+					"text" : "see p.play2~ for stereo"
 				}
 
 			}
@@ -499,7 +499,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 4.0, 149.0, 30.0 ],
-					"text" : "p.playboy~",
+					"text" : "p.play~",
 					"varname" : "autohelp_top_title[1]"
 				}
 
@@ -822,7 +822,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "int" ],
 					"patching_rect" : [ 13.0, 482.0, 364.0, 22.0 ],
-					"text" : "p.playboy~ jimmy 200 200"
+					"text" : "p.play~ jimmy 200 200"
 				}
 
 			}
@@ -1044,7 +1044,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "p.playboy~.maxpat",
+				"name" : "p.play~.maxpat",
 				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/audio",
 				"patcherrelativepath" : "../../p.objects-abstractions/audio",
 				"type" : "JSON",
