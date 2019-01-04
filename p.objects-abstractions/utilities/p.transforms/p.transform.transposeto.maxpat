@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 976.0, 134.0, 177.0, 316.0 ],
+		"rect" : [ 976.0, 134.0, 174.0, 288.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,21 +44,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 228.0, 138.0, 22.0 ],
+					"patching_rect" : [ 19.5, 200.0, 138.0, 22.0 ],
 					"text" : "p.transform.transposeby"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-25",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 48.0, 189.0, 67.5, 22.0 ]
 				}
 
 			}
@@ -69,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 48.0, 157.0, 67.5, 22.0 ],
+					"patching_rect" : [ 48.0, 157.0, 78.5, 22.0 ],
 					"text" : "* -1."
 				}
 
@@ -81,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 48.0, 126.0, 67.5, 22.0 ],
+					"patching_rect" : [ 48.0, 126.0, 78.5, 22.0 ],
 					"text" : "- 0."
 				}
 
@@ -103,10 +90,10 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 48.0, 94.0, 47.0, 22.0 ],
-					"text" : "unpack"
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 48.0, 94.0, 61.0, 22.0 ],
+					"text" : "unpack 0."
 				}
 
 			}
@@ -114,12 +101,12 @@
 				"box" : 				{
 					"comment" : "transpose target (number)",
 					"id" : "obj-52",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.5, 15.0, 30.0, 30.0 ]
+					"patching_rect" : [ 107.5, 15.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -127,11 +114,11 @@
 				"box" : 				{
 					"comment" : "output (list)",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.5, 267.0, 30.0, 30.0 ]
+					"patching_rect" : [ 19.5, 238.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -139,7 +126,7 @@
 				"box" : 				{
 					"comment" : "input (list)",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -165,15 +152,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-25", 0 ]
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -212,16 +192,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "p.transform.transposeby.maxpat",
-				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.transforms",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

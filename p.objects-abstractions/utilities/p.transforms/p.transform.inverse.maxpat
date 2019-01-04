@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 932.0, 79.0, 321.0, 492.0 ],
+		"rect" : [ 647.0, 90.0, 321.0, 492.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -72,7 +72,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.5, 399.0, 287.0, 22.0 ],
-					"text" : "100. -0.4 99.98 197.9 -800.2"
+					"text" : "1.1 0. -1.1 -2.2 -3.3"
 				}
 
 			}
@@ -129,10 +129,10 @@
 					"id" : "obj-70",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 142.0, 128.0, 47.0, 22.0 ],
-					"text" : "unpack"
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 142.0, 128.0, 61.0, 22.0 ],
+					"text" : "unpack 0."
 				}
 
 			}
@@ -176,7 +176,7 @@
 				"box" : 				{
 					"comment" : "output (list)",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -188,7 +188,7 @@
 				"box" : 				{
 					"comment" : "input (list)",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -338,9 +338,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
