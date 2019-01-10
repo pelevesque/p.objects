@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 932.0, 79.0, 224.0, 284.0 ],
+		"rect" : [ 932.0, 391.0, 284.0, 277.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 51.0, 241.0, 41.0, 18.0 ],
+					"text" : "output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 109.0, 255.0, 171.0, 18.0 ],
+					"text" : "© 2019, Pierre-Emmanuel Lévesque"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 51.0, 24.0, 41.0, 18.0 ],
+					"text" : "input"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "set" ],
-					"patching_rect" : [ 19.5, 67.0, 47.0, 22.0 ],
+					"patching_rect" : [ 15.5, 70.0, 47.0, 22.0 ],
 					"text" : "t b l set"
 				}
 
@@ -56,7 +95,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 187.0, 184.0, 22.0 ],
+					"patching_rect" : [ 15.5, 190.0, 184.0, 22.0 ],
 					"text" : "5.5 4.4 3.3 2.2 1.1"
 				}
 
@@ -68,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.0, 149.0, 69.0, 22.0 ],
+					"patching_rect" : [ 67.0, 152.0, 69.0, 22.0 ],
 					"text" : "prepend $1"
 				}
 
@@ -80,33 +119,33 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.0, 120.0, 25.0, 22.0 ],
+					"patching_rect" : [ 67.0, 123.0, 25.0, 22.0 ],
 					"text" : "iter"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "output (list)",
+					"comment" : "(list) output",
 					"id" : "obj-2",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.5, 232.0, 30.0, 30.0 ]
+					"patching_rect" : [ 15.5, 235.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "input (list)",
+					"comment" : "(list) input",
 					"id" : "obj-1",
 					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 15.0, 30.0, 30.0 ]
+					"patching_rect" : [ 15.5, 18.0, 30.0, 30.0 ]
 				}
 
 			}

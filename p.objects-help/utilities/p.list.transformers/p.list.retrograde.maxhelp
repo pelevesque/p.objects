@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 791.0, 233.0, 306.0, 315.0 ],
+		"rect" : [ 791.0, 233.0, 307.0, 302.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 161.0, 65.0, 22.0 ],
+					"patching_rect" : [ 49.0, 156.0, 65.0, 22.0 ],
 					"text" : "1 a 2 b 3 c"
 				}
 
@@ -56,8 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 133.0, 105.0, 22.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 29.0, 128.0, 105.0, 22.0 ],
 					"text" : "1.1 2.2 3.3 4.4 5.5"
 				}
 
@@ -69,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 106.0, 55.0, 22.0 ],
+					"patching_rect" : [ 13.0, 101.0, 55.0, 22.0 ],
 					"text" : "1 2 3 4 5"
 				}
 
@@ -81,8 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 234.0, 249.0, 22.0 ],
-					"text" : "c 3 b 2 a 1"
+					"patching_rect" : [ 13.0, 229.0, 249.0, 22.0 ]
 				}
 
 			}
@@ -95,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.0, 280.0, 92.0, 22.0 ],
+					"patching_rect" : [ 203.0, 267.0, 92.0, 22.0 ],
 					"text" : "p.objects guide"
 				}
 
@@ -158,7 +156,7 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
+					"color" : [ 0.317647058823529, 0.709803921568627, 0.32156862745098, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-40",
@@ -166,8 +164,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 198.0, 113.0, 22.0 ],
-					"text" : "p.transform.reverse"
+					"patching_rect" : [ 13.0, 193.0, 92.0, 22.0 ],
+					"text" : "p.list.retrograde"
 				}
 
 			}
@@ -181,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 5.0, 205.0, 30.0 ],
-					"text" : "p.transform.reverse",
+					"text" : "p.list.retrograde",
 					"varname" : "autohelp_top_title"
 				}
 
@@ -195,7 +193,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 36.0, 219.0, 21.0 ],
-					"text" : "Reverses the order of a list.",
+					"text" : "Retrogrades a list.",
 					"varname" : "autohelp_top_digest"
 				}
 
@@ -270,9 +268,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "p.transform.reverse.maxpat",
-				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.transforms",
-				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.transforms",
+				"name" : "p.list.retrograde.maxpat",
+				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.list.transformers",
+				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.list.transformers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
