@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 932.0, 79.0, 173.0, 310.0 ],
+		"rect" : [ 932.0, 79.0, 295.0, 313.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,60 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "transpose amount (number)",
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 118.5, 288.0, 171.0, 18.0 ],
+					"text" : "© 2019, Pierre-Emmanuel Lévesque"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 154.5, 21.0, 102.0, 18.0 ],
+					"presentation_linecount" : 5,
+					"text" : "transposition amount"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 52.5, 268.0, 37.0, 18.0 ],
+					"text" : "output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 52.5, 21.0, 34.0, 18.0 ],
+					"text" : "input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "(float) transposition amount",
 					"cool" : 1,
 					"id" : "obj-3",
 					"index" : 0,
@@ -114,7 +167,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "output (list)",
+					"comment" : "(list) output",
 					"id" : "obj-2",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -126,7 +179,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "input (list)",
+					"comment" : "(list) input",
 					"id" : "obj-1",
 					"index" : 0,
 					"maxclass" : "inlet",
