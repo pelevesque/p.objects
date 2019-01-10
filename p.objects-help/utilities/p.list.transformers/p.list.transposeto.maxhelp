@@ -94,8 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 197.0, 249.0, 22.0 ],
-					"text" : "36.59 37.59 38.59 39.59 40.59"
+					"patching_rect" : [ 13.0, 197.0, 249.0, 22.0 ]
 				}
 
 			}
@@ -108,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 201.0, 230.0, 92.0, 22.0 ],
+					"patching_rect" : [ 205.0, 232.0, 92.0, 22.0 ],
 					"text" : "p.objects guide"
 				}
 
@@ -171,7 +170,7 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
+					"color" : [ 0.317647058823529, 0.709803921568627, 0.32156862745098, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-40",
@@ -179,8 +178,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 167.0, 156.0, 22.0 ],
-					"text" : "p.transform.transposeto"
+					"patching_rect" : [ 13.0, 167.0, 99.0, 22.0 ],
+					"text" : "p.list.transposeto"
 				}
 
 			}
@@ -194,7 +193,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 5.0, 265.0, 30.0 ],
-					"text" : "p.transform.transposeto",
+					"text" : "p.list.transposeto",
 					"varname" : "autohelp_top_title"
 				}
 
@@ -283,16 +282,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "p.transform.transposeto.maxpat",
-				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.transforms",
-				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.transforms",
+				"name" : "p.list.transposeto.maxpat",
+				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.list.transformers",
+				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.list.transformers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "p.transform.transposeby.maxpat",
-				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.transforms",
-				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.transforms",
+				"name" : "p.list.transposeby.maxpat",
+				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/_to_check",
+				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/_to_check",
 				"type" : "JSON",
 				"implicit" : 1
 			}
