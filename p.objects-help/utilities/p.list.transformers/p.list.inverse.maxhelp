@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 802.0, 322.0, 307.0, 268.0 ],
+		"rect" : [ 341.0, 79.0, 303.0, 244.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 207.0, 71.0, 80.0, 19.0 ],
+					"text" : "dependencies "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-42",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 197.5, 92.0, 99.0, 19.0 ],
+					"text" : "p.list.reproportion"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 133.0, 105.0, 22.0 ],
+					"patching_rect" : [ 29.0, 104.0, 105.0, 22.0 ],
 					"text" : "1.1 2.2 3.3 4.4 5.5"
 				}
 
@@ -56,8 +82,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 106.0, 55.0, 22.0 ],
-					"text" : "1 2 3 4 5"
+					"patching_rect" : [ 13.0, 77.0, 62.0, 22.0 ],
+					"text" : "1 2 3 5 10"
 				}
 
 			}
@@ -68,8 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 197.0, 249.0, 22.0 ],
-					"text" : "1. 0. -1. -2. -3."
+					"patching_rect" : [ 13.0, 168.0, 249.0, 22.0 ]
 				}
 
 			}
@@ -82,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 201.0, 230.0, 92.0, 22.0 ],
+					"patching_rect" : [ 201.0, 212.0, 92.0, 22.0 ],
 					"text" : "p.objects guide"
 				}
 
@@ -96,7 +121,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 165.0, 114.0, 20.0, 20.0 ]
+					"patching_rect" : [ 144.0, 88.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -110,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 161.0, 53.0, 22.0 ],
+					"patching_rect" : [ 144.0, 135.0, 53.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -125,27 +150,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 139.0, 118.0, 22.0 ],
+					"patching_rect" : [ 144.0, 113.0, 118.0, 22.0 ],
 					"text" : "help p.objects-guide"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 11.0,
-					"id" : "obj-33",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 75.0, 130.0, 19.0 ],
-					"text" : "send any type of list"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
+					"color" : [ 0.317647058823529, 0.709803921568627, 0.32156862745098, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-40",
@@ -153,8 +165,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 161.0, 111.0, 22.0 ],
-					"text" : "p.transform.inverse"
+					"patching_rect" : [ 13.0, 132.0, 75.0, 22.0 ],
+					"text" : "p.list.inverse"
 				}
 
 			}
@@ -250,9 +262,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "p.transform.inverse.maxpat",
-				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.transforms",
-				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.transforms",
+				"name" : "p.list.inverse.maxpat",
+				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.list.transformers",
+				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.list.transformers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "p.list.reproportion.maxpat",
+				"bootpath" : "~/Documents/Repos/p.objects/p.objects-abstractions/utilities/p.list.transformers",
+				"patcherrelativepath" : "../../../p.objects-abstractions/utilities/p.list.transformers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
