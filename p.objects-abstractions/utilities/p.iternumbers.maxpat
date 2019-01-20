@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 641.0, 282.0, 567.0, 317.0 ],
+		"rect" : [ 752.0, 265.0, 567.0, 316.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -194,6 +194,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.992156862745098, 0.894117647058824, 0.643137254901961, 1.0 ],
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -239,6 +240,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.992156862745098, 0.894117647058824, 0.643137254901961, 1.0 ],
 									"id" : "obj-7",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -255,7 +257,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1232.0, 148.0, 214.0, 293.0 ],
+										"rect" : [ 1078.0, 157.0, 207.0, 290.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -322,6 +324,7 @@
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.992156862745098, 0.894117647058824, 0.643137254901961, 1.0 ],
 													"id" : "obj-6",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -789,6 +792,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.992156862745098, 0.894117647058824, 0.643137254901961, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
