@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 434.0, 367.0, 365.0, 444.0 ],
+		"rect" : [ 98.0, 79.0, 366.0, 447.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -97,7 +97,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 119.0, 165.5, 174.0, 19.0 ],
-					"presentation_linecount" : 2,
 					"text" : "resets target to first number in list"
 				}
 
@@ -107,12 +106,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-24",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.0, 235.5, 231.0, 31.0 ],
-					"text" : "args\n1) transposition target (def first number in list)"
+					"patching_rect" : [ 119.0, 225.5, 205.0, 43.0 ],
+					"text" : "args\n1) transposition target (option) \n    (def: first number in list)"
 				}
 
 			}
@@ -185,7 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 281.0, 249.0, 22.0 ],
+					"patching_rect" : [ 13.0, 287.0, 249.0, 22.0 ],
 					"text" : "1. 2. 3. 4. 5."
 				}
 
